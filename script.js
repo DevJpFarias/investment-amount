@@ -7,7 +7,7 @@ function calculateCompoundInterest() {
   let amount = principal;
 
   for (let i = 1; i <= months; i++) {
-      amount = amount * (1 + rate) + monthly;
+    amount = amount * (1 + (rate / 100)) + monthly;
   }
 
   const resultDiv = document.getElementById("result");
