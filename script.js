@@ -10,16 +10,15 @@ function calculateCompoundInterest() {
     amount = amount * (1 + (rate / 100)) + monthly;
   }
 
-  const resultDiv = document.getElementById("result");
+  const resultValue = document.getElementById("total");
 
-  resultDiv
-      .innerHTML =
-      "Montante final: " +
+  resultValue
+    .innerHTML =
       amount.toLocaleString(
-          'pt-br',
-          {
-              style: 'currency',
-              currency: 'BRL'
-          }
+        'pt-br',
+        {
+          style: 'currency',
+          currency: 'BRL'
+        }
       );
 }
